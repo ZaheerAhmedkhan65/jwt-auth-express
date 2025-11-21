@@ -1,4 +1,5 @@
-# JWT Auth Express
+# jwt-auth-express-tidb-cloud
+
 
 A robust, production-ready JWT authentication package for Express.js with support for MySQL, MySQL2, and TiDB Cloud.
 
@@ -8,20 +9,18 @@ A robust, production-ready JWT authentication package for Express.js with suppor
 - ✅ JWT access & refresh tokens
 - ✅ Password reset functionality
 - ✅ Email integration (with mock fallback)
-- ✅ Multiple database support (MySQL, MySQL2, TiDB Cloud)
+- ✅ Multiple database support (MySQL2, TiDB Cloud)
 - ✅ Automatic table creation
 - ✅ Comprehensive security features
 - ✅ Production-ready error handling
 
 ## Quick Start
 
-# jwt-auth-express
-
 [![npm version](https://img.shields.io/badge/npm-v0.0.0-lightgrey.svg)](https://www.npmjs.com/)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![coverage](https://img.shields.io/badge/coverage-unknown-orange.svg)](coverage/lcov-report/index.html)
 
-A focused, production-ready JWT authentication library and example server for Express.js. It provides common auth flows (signup, signin, refresh tokens, password reset) and supports multiple SQL backends (MySQL / mysql2 and TiDB Cloud). This repo is organized so you can reuse the service code or run the example server directly.
+A focused, production-ready JWT authentication library and example server for Express.js. It provides common auth flows (signup, signin, refresh tokens, password reset) and supports MySQL2 backends (TiDB Cloud). This repo is organized so you can reuse the service code or run the example server directly.
 
 ## Highlights
 
@@ -37,8 +36,8 @@ A focused, production-ready JWT authentication library and example server for Ex
 Install dependencies and run the example server:
 
 ```bash
-git clone https://github.com/ZaheerAhmedkhan65/jwt-auth-express.git
-cd jwt-auth-express
+git clone https://github.com/ZaheerAhmedkhan65/jwt-auth-express-tidb-cloud.git
+cd jwt-auth-express-tidb-cloud
 npm install
 # copy .env.example to .env and edit values
 node index.js
@@ -48,10 +47,10 @@ The example server exposes authentication endpoints under `/auth` (see API secti
 
 ## Installation (library)
 
-This repository can be used as a library or as a standalone example. To install from npm (if published):
+This repository can be used as a library or as a standalone example. To install from npm:
 
 ```bash
-npm install jwt-auth-express
+npm install jwt-auth-express-tidb-cloud
 ```
 
 Or use the code directly in your project by importing the controller/router modules.
@@ -188,12 +187,3 @@ This project is licensed under the MIT License — see the `LICENSE` file for de
 
 Inspired by common Express + JWT patterns. Thanks to contributors and the Node.js community.
 
----
-
-If you'd like, I can:
-
-- add a `.env.example` file to the repo
-- generate badge URLs with real build/coverage links
-- add a short CONTRIBUTING.md or CODE_OF_CONDUCT
-
-Tell me which extras you want and I'll add them.
